@@ -32,4 +32,4 @@ jobs:
     - name: installing surge
       run: npm install --global surge
     - name: deploying site on surge
-      run: surge ./ reactbase_Tevfevve.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build reactbase_Tevfevve.surge.sh --token ${{ secrets.SURGE_TOKEN }}
