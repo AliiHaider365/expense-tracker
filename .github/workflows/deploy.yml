@@ -7,9 +7,7 @@ name: new surge sit
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+ 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -28,8 +26,10 @@ jobs:
       with:
         node-version: 12 
 
+    - name: create build folder
+      run:  yarn build 
     # Runs a set of commands using the runners shell
     - name: installing surge
       run: npm install --global surge
     - name: deploying site on surge
-      run: surge ./ reactbase_Test112222.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+      run: surge ./build/index reactbase_Test112222.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
