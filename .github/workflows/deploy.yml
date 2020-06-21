@@ -33,3 +33,4 @@ jobs:
       run: npm install --global surge
     - name: deploying site on surge
       run: surge ./build/index reactbase_Test112222.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+
