@@ -26,8 +26,10 @@ jobs:
       with:
         node-version: 12 
 
-    - name: create build folder
-      run:  npm run build 
+    name: installing dependency
+      run: npm install
+    - name: create buid file
+      run:  CI=false npm run build
     # Runs a set of commands using the runners shell
     - name: installing surge
       run: npm install --global surge
