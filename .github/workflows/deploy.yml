@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: 12 
 
-    name: installing dependency
+    - name: installing dependency
       run: npm install
     - name: create buid file
       run:  CI=false npm run build
