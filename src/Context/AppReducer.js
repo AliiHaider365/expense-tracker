@@ -1,11 +1,16 @@
-export default (state ,action ) =>{
+export  default (state ,action ) =>{
     switch (action.type) {
-        // case  "":
+         case "ADD-Transaction":
+            return   {
+                 ...state ,
+                 transaction: [ action.payload ,...state.transaction]
+            }
+         
+         case 'DELETE_TRANSACTION':
+            return {
+              ...state,
+              transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
+            }
             
-        //     break;
-    
-        default:
-            return state
-            break;
-    }
+        }
 }
