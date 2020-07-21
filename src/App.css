@@ -1,40 +1,55 @@
-.container{
-  border: 1px solid gray ;
+.container {
+  border: 1px solid gray;
+  border-radius: 20px;
   margin: auto;
   width: 500px;
   min-height: 100vh;
+  padding: 4px;
 }
-h3{
+h3 {
   margin: 0px !important;
 }
-.txt-ali{
+.txt-ali {
   text-align: center;
 }
-.mt-1{
+.mt-1 {
   margin-top: 10px;
 }
-.title{
-  text-align: center ;
+.title {
+  text-align: center;
   color: #000000;
   margin: 0px !important;
 }
-.pl-4{
-  padding-left: 30px;;
+.pl-4 {
+  padding-left: 30px;
 }
-.balance{
-  color: #76ff03 ;
+.balanceContainer {
+  margin: 30px 0px;
 }
-.expense{
+.balance {
+  color: #76ff03;
+  margin: 10px 4px !important;
+  letter-spacing: 3px;
+}
+.bal {
+  font-size: 3rem !important;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.color {
+  color: #76ff03;
+}
+.expense {
   color: #bf360c;
 }
-.flow-text{
+.flow-text {
   padding-left: 20px;
   margin: 0px !important;
 }
-.col{
+.col {
   padding: 0px !important;
 }
-.heading{
+.heading {
   margin: auto;
   font-size: 2rem;
   margin-top: 18px;
@@ -42,19 +57,22 @@ h3{
   width: 90%;
   border-bottom: 1px solid gray;
 }
-.input{
-  width:80%;
+.input {
+  width: 80%;
   margin: auto;
 }
-.defualt{
+.defualt {
   margin-left: 10px;
   width: 45%;
   text-align: center;
 }
-.table{
-  width:80%;
+.table {
+  width: 80%;
   margin: auto;
 }
-.value{
+i:hover {
+  cursor: pointer;
+}
+.value {
   display: inline-block;
 }
